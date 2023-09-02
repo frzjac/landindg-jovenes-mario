@@ -1,5 +1,5 @@
 doctype html
-html(class="no-js" lang="es-CO")
+html(lang="es-CO")
   head
     meta(charset='utf-8')
     title
@@ -12,6 +12,7 @@ html(class="no-js" lang="es-CO")
     link(rel='manifest' href='site.webmanifest')
     link(rel='apple-touch-icon' href='icon.png')
     // Place favicon.ico in the root directory
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css')
     link(rel='stylesheet' href='https://fonts.cdnfonts.com/css/poppins')
     link(rel='stylesheet' href='css/normalize.css')
     link(rel='stylesheet' href='css/main.css')
@@ -28,8 +29,14 @@ html(class="no-js" lang="es-CO")
 
   // Scripts
   script(src='js/vendor/modernizr-3.11.2.min.js')
+  script(src='js/vendor/jquery.min.js')
+  script(src='js/gsap.min.js')
+  script(src='js/TweenMax.min.js')
   script(src='js/ScrollMagic.min.js')
-  script(src='js/plugins.js')
+  script(src='js/plugins/debug.addIndicators.min.js')
+  script(src='js/plugins/animation.gsap.min.js')
+
+ 
   script(src='js/main.js')
   // Google Analytics: change UA-XXXXX-Y to be your site's ID.
   script.

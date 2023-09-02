@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="es-CO">
+<html lang="es-CO">
   <head>
     <meta charset="utf-8">
     <title></title>
@@ -12,6 +12,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/poppins">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -24,15 +25,15 @@
         <div class="scrollContent">
           <section class="flex-container flex-column" id="titlechart">
             <div class="flex-content"><img class="img-scale40" src="img/icono.webp" style="margin-top:5vh">
-              <h2 style="font-size: 2rem">Con Mario Erazo la juventud AVANZA</h2><img class="img-scale40" src="img/mario-logo.webp">
+              <h2 class="animate__animated animate__bounce" style="font-size: 2rem">Con Mario Erazo la juventud AVANZA</h2><img class="img-scale40" src="img/mario-logo.webp">
               <div id="fondo-azul1"><img class="img-scale60" src="img/slogan-blanco.webp" style="transform: skew(0deg, 10deg);margin-top: -15vh;"></div>
             </div>
           </section>
-          <div class="parallaxParent" id="parallax1">
+          <div class="parallaxParent section" id="parallax1" data-section="1">
             <div id="fondo1">
               <div class="parallax-content">
-                <h3 class="title1">Todos por Sibundoy </h3>
-                <p class="parrafo1-centrado">
+                <h3 class="title1 animate__animated animate__bounceIn">Todos por Sibundoy </h3>
+                <p class="parrafo1-centrado animate__animated animate__backInUp">
                   CONFIAMOS en los jóvenes, en su talento transformador, en sus ideas de cambio y en su 
                   persistencia para conquistar diferentes escenarios del municipio, el departamento, el país 
                   y el mundo.
@@ -40,35 +41,35 @@
               </div>
             </div>
           </div>
-          <div class="parallaxParent" id="parallax2">
+          <div class="parallaxParent section" id="parallax2" data-section="2">
             <div id="fondo2">
               <div class="parallax-content">
-                <h3 class="title2">Ley Estatutaria 1885 de 2018</h3>
-                <h4 class="subtitulos">POR LA CUAL SE MODIFICA LA LEY ESTATUTARIA 1622 DE 2013 Y SE DICTAN OTRAS DISPOSICIONES.</h4>
-                <p>
+                <h3 class="title2 animate__animated animate__bounceInDown">Ley Estatutaria 1885 de 2018</h3>
+                <h4 class="subtitulos animate__animated animate__bounceInDown"> POR LA CUAL SE MODIFICA LA LEY ESTATUTARIA 1622 DE 2013 Y SE DICTAN OTRAS DISPOSICIONES.</h4>
+                <p class="animate__animated animate__backInUp">
                    ARTÍCULO 5. Definiciones. Para efectos de la presente ley se entenderá como:
                   Joven. Toda persona entre 14 y 28 años cumplidos en proceso de consolidación de 
                   su autonomía intelectual, física, moral, económica, social y cultural que hace parte 
                   de una comunidad política y en ese sentido ejerce su ciudadanía.
                 </p>
-                <div class="titulo-anotacion">LA UNESCO Y LA JUVENTUD</div>
-                <p>Según el criterio de las Naciones Unidas, se considera jóvenes a las personas con edades comprendidas entre los 15 y los 24 años. Por lo tanto, los jóvenes constituyen un 18% de la población mundial y los asuntos relacionados con ellos son, por excelencia, un motivo de preocupación. Sin embargo, la tarea de definir debidamente a la juventud genera una gran polémica y no recibe toda la atención que merece.</p>
+                <div class="titulo-anotacion animate__animated animate__backInUp"> LA UNESCO Y LA JUVENTUD</div>
+                <p class="animate__animated animate__backInUp"> Según el criterio de las Naciones Unidas, se considera jóvenes a las personas con edades comprendidas entre los 15 y los 24 años. Por lo tanto, los jóvenes constituyen un 18% de la población mundial y los asuntos relacionados con ellos son, por excelencia, un motivo de preocupación. Sin embargo, la tarea de definir debidamente a la juventud genera una gran polémica y no recibe toda la atención que merece.</p>
               </div>
             </div>
           </div>
-          <div class="parallaxParent" id="parallax3">
+          <div class="parallaxParent section" id="parallax3" data-section="3">
             <div id="fondo3">
               <div class="parallax-content"><img class="img-scale80" src="img/Imagen1.png">
                 <div> </div><img class="img-scale80" src="img/Imagen2.png">
               </div>
             </div>
           </div>
-          <div class="parallaxParent" id="parallax4">
+          <div class="parallaxParent section" id="parallax4" data-section="4">
             <div id="fondo4">
               <div class="parallax-content"><img class="img-scale80" src="img/Imagen3.png"></div>
             </div>
           </div>
-          <div class="parallaxParent" id="parallax5">
+          <div class="parallaxParent section" id="parallax5" data-section="5">
             <div id="fondo5">
               <div class="parallax-content">
                 <div class="title2">Aproximadamente 5.000 habitantes pertenecen a la población joven.</div>
@@ -79,7 +80,7 @@
               </div>
             </div>
           </div>
-          <div class="parallaxParent" id="parallax6">
+          <div class="parallaxParent section" id="parallax6" data-section="6">
             <div id="fondo6">
               <div class="parallax-content">
                 <div class="title2">Cada día menos Jóvenes tienen un camino educativo exitoso</div>
@@ -91,7 +92,7 @@
               </div>
             </div>
           </div>
-          <div class="parallaxParent" id="parallax7">
+          <div class="parallaxParent section" id="parallax7" data-section="7">
             <div id="fondo7">
               <div class="parallax-content">
                 <H3>Garantizaremos oportunidades de educación y emprendimiento para los jóvenes.</H3>
@@ -106,8 +107,12 @@
   </body>
   <!-- Scripts-->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
   <script src="js/ScrollMagic.min.js"></script>
-  <script src="js/plugins.js"></script>
+  <script src="js/plugins/debug.addIndicators.min.js"></script>
+  <script src="js/plugins/animation.gsap.min.js"></script>
   <script src="js/main.js"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.-->
   <script>

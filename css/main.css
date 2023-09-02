@@ -172,6 +172,7 @@ section#titlechart {
     top: 50%;
     margin: 1em;
     text-align: justify;
+    z-index: 2;
   }
   #fondo-azul1{
     width: 100vw; /* Ancho de los lados más largos */
