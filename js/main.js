@@ -1,31 +1,19 @@
-$(document).ready(function () {
-        var controller = new ScrollMagic.Controller();
+document.addEventListener("DOMContentLoaded", function() {
+        var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
-        // Function to animate text with AnimatedCSS
-        function animateTextIn(element) {
-                $(element).addClass("animated fadeIn"); // You can change the animation class here
-        }
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: "#parallax1"})
+					.setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
 
-        // Set up animations for each section
-        function setSectionAnimation(section, triggerElement) {
-                var sectionTween = gsap.from(section, { opacity: 0, y: -50, duration: 1, ease: "power3.out" });
+	new ScrollMagic.Scene({triggerElement: "#parallax2"})
+					.setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
 
-                var scene = new ScrollMagic.Scene({
-                triggerElement: triggerElement,
-                triggerHook: 0.7,
-                reverse: false,
-                })
-                .setTween(sectionTween)
-                // .on("enter", function () {
-                //         animateTextIn(section.find(".animated-text"));
-                // })
-                .addTo(controller);
-        }
-
-        // Set animations for each section and trigger
-        setSectionAnimation($("#parallax1"), "#parallax1", false);
-        setSectionAnimation($("#parallax2"), "#parallax2", true);
-        setSectionAnimation($("#parallax3"), "#parallax3", true);
-        // Add more sections and triggers as needed
+	new ScrollMagic.Scene({triggerElement: "#parallax3"})
+					.setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
     });
-    

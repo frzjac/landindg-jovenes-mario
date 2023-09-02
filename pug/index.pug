@@ -20,8 +20,8 @@ html(lang="es-CO")
   // Add your site or application content here
   body
     #content-wrapper
-      #sections-wrapper
-        .scrollContent
+      #pinContainer
+        #slideContainer
           include home.pug
           include secciones.pug
   
@@ -30,6 +30,7 @@ html(lang="es-CO")
   // Scripts
   script(src='js/vendor/modernizr-3.11.2.min.js')
   script(src='js/vendor/jquery.min.js')
+  script(src='js/vendor/iscroll-probe-min.js')
   script(src='js/gsap.min.js')
   script(src='js/TweenMax.min.js')
   script(src='js/ScrollMagic.min.js')

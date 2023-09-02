@@ -169,7 +169,7 @@ section#titlechart {
   .parallax-content{
     position: absolute;
     color: white;
-    top: 50%;
+    top: 0%;
     margin: 1em;
     text-align: justify;
     z-index: 2;
