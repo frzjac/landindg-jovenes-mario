@@ -138,6 +138,7 @@ textarea {
 }
 #content-wrapper, #sections-wrapper {
   height: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 #sections-wrapper .scrollContent{
@@ -169,6 +170,8 @@ section#titlechart {
     position: absolute;
     color: white;
     top: 50%;
+    margin: 1em;
+    text-align: justify;
   }
   #fondo-azul1{
     width: 100vw; /* Ancho de los lados más largos */
@@ -200,6 +203,21 @@ section#titlechart {
 
 .flex-column {
   flex-direction: column;
+}
+
+.title1{
+  text-align: center;
+    text-transform: uppercase;
+    font-size: 3.8em;
+}
+
+.parrafo1{
+  text-align: justify;
+  font-size: 1.3em;
+}
+.parrafo1-centrado{
+  text-align: center;
+    font-size: 1.5em;
 }
 /*
  * Hide visually and from screen readers
