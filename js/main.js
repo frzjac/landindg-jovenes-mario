@@ -3,17 +3,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	// build scenes
 	new ScrollMagic.Scene({triggerElement: "#parallax1"})
-					.setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
+					.setTween("#parallax1 > div", {y: "100%", ease: Linear.easeNone})
 					.addIndicators()
 					.addTo(controller);
 
 	new ScrollMagic.Scene({triggerElement: "#parallax2"})
-					.setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
+					.setTween("#parallax2 > div", {y: "100%", ease: Linear.easeNone})
 					.addIndicators()
 					.addTo(controller);
 
 	new ScrollMagic.Scene({triggerElement: "#parallax3"})
-					.setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
+					.setTween("#parallax3 > div", {y: "100%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#parallax4"})
+					.setTween("#parallax3 > div", {y: "100%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#parallax5"})
+					.setTween("#parallax3 > div", {y: "100%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#parallax6"})
+					.setTween("#parallax3 > div", {y: "100%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+	new ScrollMagic.Scene({triggerElement: "#parallax7"})
+					.setTween("#parallax3 > div", {y: "100%", ease: Linear.easeNone})
 					.addIndicators()
 					.addTo(controller);
     });
